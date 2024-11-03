@@ -1,9 +1,4 @@
-import React from 'react'
+import axios from "axios";
+import {HTTP} from "./useEnv"
 
-function useAxios() {
-  return (
-    <div>useAxios</div>
-  )
-}
-
-export default useAxios
+export const useAxios = () => axios.create({baseURL:HTTP})
