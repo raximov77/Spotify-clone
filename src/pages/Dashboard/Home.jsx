@@ -42,7 +42,7 @@ function Home() {
     setPlay(uri)
     setPlaying(true)
   }
-  /* console.log(tracksList) */
+  
   return (
     <>
       <div className='flex overflow-x-hidden justify-between gap-5 p-5'>
