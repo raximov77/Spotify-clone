@@ -22,7 +22,7 @@ function Home() {
   }, [token])
 
   useEffect(() => {
-    if(token){
+    if (token) {
     spotifyApi.searchTracks("Sherali Jo'rayev ").then(res =>{
       setTracksList(res.body.tracks.items.map(item => {
         const data = {

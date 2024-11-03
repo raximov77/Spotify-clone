@@ -1,5 +1,5 @@
 import React from 'react'
-import {Home, Like, Search, Single} from '../pages/Dashboard'
+import {Home, Like, Search, Single} from '../pages'
 import { Route, Routes } from 'react-router-dom'
 
 function CustomRoutes() {
