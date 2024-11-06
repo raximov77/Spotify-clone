@@ -11,3 +11,13 @@
 .PlayerRSWP {
     background-color: #a3a3a3;
 }
+
+.trends-item{
+    background-color: rgba(255, 255, 255, 10%);
+}
+
+.music-single {
+    background-image: url("./assets/images/single-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
