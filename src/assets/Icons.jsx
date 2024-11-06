@@ -50,9 +50,11 @@ function LikeIcon(){
 }
 
 function LikeInner(){
+  return (
     <svg id="like" width="30" height="28" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path id="like" d="M7.00057 1.15801C8.64484 -0.439291 11.1858 -0.386275 12.7699 1.33069C14.3532 3.04841 14.4078 5.78403 12.9351 7.5684L6.99917 14L1.06468 7.5684C-0.408088 5.78403 -0.352789 3.04386 1.22988 1.33069C2.81535 -0.384003 5.3514 -0.441563 7.00057 1.15801Z" fill="currentColor"/>
-    </svg>
+    <path id="like" d="M7.00057 1.15801C8.64484 -0.439291 11.1858 -0.386275 12.7699 1.33069C14.3532 3.04841 14.4078 5.78403 12.9351 7.5684L6.99917 14L1.06468 7.5684C-0.408088 5.78403 -0.352789 3.04386 1.22988 1.33069C2.81535 -0.384003 5.3514 -0.441563 7.00057 1.15801Z" fill="currentColor"/>
+</svg>
+  )
 }
 
 export {HomeIcon, SearchIcon, LibraryIcon, PlaylistIcon, LikeIcon, LikeInner}

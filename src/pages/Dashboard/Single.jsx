@@ -17,7 +17,7 @@ function Single() {
   useEffect(() => {
     if(!token) return;
     spotifyApi.setAccessToken(token)
-  }, [token])
+  }, [token, id])
 
   const [trackInfo, setTrackInfo] = useState({})
   const [artistTracks, setArtistTracks] = useState([])
@@ -86,7 +86,7 @@ function Single() {
           </tr>
         </thead>
         <tbody>
-          {artistTracks.map((item, index) => {
+          {artistTracks.map((item, index) => (
             <tr onClick={(evt) => handleTrackClick(item, evt)} className='cursor-pointer' key={item.id}>
               <td className='text-white text-[18px] p-3'>
                 {item.isPlaying ? <LoadingChart/> : index +1}
@@ -103,11 +103,13 @@ function Single() {
               <td className='p-3 text-[18px] text-white text-start'>{item.albumName}</td>
               <td></td>
               <td className='p-3 space-x-[34px] flex items-center text-end'>
-                <button id='like' className={`${item.isLiked ? "text-green-400" : "text-white"}`}><LikeInner/></button>
+                <button id='like' className={`${item.isLiked ? "text-green-400" : "text-white"}`}>
+                  <LikeInner/>
+                </button>
                 <p className='text-white text-[20px]'>{item.time}</p>
               </td>
             </tr>
-          })}
+          ))}
         </tbody>
     </table>
     </div>
