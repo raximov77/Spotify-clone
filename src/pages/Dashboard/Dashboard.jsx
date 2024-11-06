@@ -7,12 +7,12 @@ import {Context} from "../../context/Context"
 import SpotifyWebPlayer from 'react-spotify-web-playback';
 
 function Dashboard({code}) {
-    const accsessToken = useAuth(code)
+    const accessToken = useAuth(code)
     const {token, setToken, setPlaying, play, playing} = useContext(Context)
 
     useEffect(() => {
-      setToken(accsessToken)
-    }, [accsessToken])
+      setToken(accessToken)
+    }, [accessToken])
   return (
     <>
       <div className='flex justify-between'>

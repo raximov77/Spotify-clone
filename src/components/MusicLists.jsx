@@ -45,8 +45,8 @@ function MusicLists({artistName}) {
         <h2 className='font-bold mb-[26px] text-[28px] text-white'>{artistName}</h2>
         <div className='flex overflow-x-hidden justify-between gap-5'>
             {tracksList.map(item => (
-            <div onClick={() => handlePLay(item)} key={item.id} className='min-w-[225px] cursor-pointer p-[21px] rounded-[8px] text-[#1c1c1c]'>
-                <img className='h-[128px] mb-[25px] rounded-[8px]' src={item.img} alt="Track img" width={"100%"}/>
+            <div onClick={() => handlePLay(item)} key={item.id} className='min-w-[225px] cursor-pointer p-[15px] rounded-[8px] text-[#1c1c1c]'>
+                <img className='h-[180px] mb-[25px] rounded-[8px]' src={item.img} alt="Track img" width={"100%"}/>
                 <h2 className='text-white mb-2 font-bold text-[20px]'>{item.trackName}</h2>
                 <p className='font-normal text-[18px] text-white opacity-[60%]'>{item.artistName}</p>
             </div>
